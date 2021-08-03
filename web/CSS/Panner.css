@@ -1,0 +1,39 @@
+/*
+Copyright(C) 2021 ,FPT UNIVERSITY
+
+DATE        Version         Author          DESCRIPTION
+04/07/2021    1.0            Vanhv   
+*/
+/* 
+    Created on : Jul 4, 2021, 9:26:29 AM
+    Author     : vanhv
+*/
+
+.navbar {
+    position: fixed;
+    background-color: cadetblue;
+    width: 100%;
+    float: left;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    color: white;
+}
+
+
+.btnHome {
+    float: left;
+    padding: 20px 30px 20px 30px;
+    display: inline;
+    border-right: 1px solid white;
+}
+
+.active {
+    background-color: cornflowerblue;
+}
+
+.btnLogin {
+    background-color: lightskyblue;
+    float: right;
+    padding: 20px 50px 20px 50px;
+}

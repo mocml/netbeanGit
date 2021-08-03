@@ -1,0 +1,57 @@
+
+// Add to Cart
+HomeAdmin jsp_include
+    PannerAdmin.jsp
+    SideBarAdmin.jsp
+    ContentAdmin.jsp
+_
+
+// AdminManager + show custmer BillDetail
+AdminBillDetail jsp_include
+    PannerAdmin.jsp  -- without [Show Cart]
+    AdminInfomation.jsp
+    MyOrderDetail.jsp
+_
+
+//Customer Infomation + show own BillDetail
+CustomerBillDetail jsp_include
+    Panner.jsp
+    CustomerInfomation.jsp
+    MyOrderDetail.jsp
+_
+
+//Info & Bill
+MyAccount jsp_include
+    //Customer info & own Bill
+    if customer
+        Panner.jsp
+        CustomerInfomation.jsp
+        MyOrder.jsp
+    //Admin Manager & customer Bill -- status Done | Wait
+    if admin
+        PannerAdmin.jsp    -- without [Show Cart]
+        AdminInfomation.jsp
+        OrderManager.jsp
+_
+//Show add to Bill or cancel Bill -- status Done | Cancel
+ShowCart jsp_include
+    Panner.jsp
+    showcarts.jsp - Check out - if [Login] check out add to db clear session
+                                else  --> [Login] --> Request to [Home]
+_
+
+Login - check if admin -> Home Admin
+               else    -> Home
+Register - if exist in customer or admin  <--- request back
+
+    ? update product DONE
+    ? delete product DONE
+    ? admin account manager !!!!!!!!
+    ? update quantity all product DONE
+    ? update status product DONE 
+    ? check quantity customer by compare quantity in Warehouse  
+        - when press [update]  DONE
+        - when press [product again] DONE
+        - set [max min quantity textField] DONE
+        - when other [Customer check out] -> waiting until admin update quantity ?????????????
+                                                                

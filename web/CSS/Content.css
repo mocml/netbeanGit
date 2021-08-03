@@ -1,0 +1,58 @@
+/*
+Copyright(C) 2021 ,FPT UNIVERSITY
+
+DATE        Version         Author          DESCRIPTION
+04/07/2021    1.0            Vanhv   
+*/
+/* 
+    Created on : Jul 4, 2021, 9:19:36 AM
+    Author     : vanhv
+*/
+
+td,
+th {
+    border: 2px solid black;
+    height: 70px;
+}
+
+th {
+    font-size: 20px;
+}
+
+table {
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.content {
+    position: absolute;
+    background-image: url("../IMAGE/background2.png");
+    left: 140px;
+    width: 91.1%;
+    min-height: 96%;
+}
+a,
+a:active,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+.content{
+    padding :20px;
+    color : white;
+}
+.content a{
+    background-color: white;
+    color : red;
+    box-shadow: 2px 3px 4px 2px #666666;
+    padding: 15px;
+}
+
+.category {
+    float: left;
+    padding: 10px 20px 10px 20px;
+    background-color: royalblue;
+}
